@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>GODSFLAGGA</title>
+    <link rel="stylesheet" href="/static/style.css"/>
+	 <script type="text/javascript">
+	 function FocusOnInput()
+	 {
+	 document.getElementById("part_no").focus();
+	 }
+	 </script>
+	</head>
+<body onload="FocusOnInput()">
+<div id="container">
+	<div id="header">
+	</div>
+	<div id="body">
+		<h1><img src="/static/shipment.png" height="45"/> GODSFLAGGA</h1>
+		<form action="render" method="get"  name="flag" id="flag">
+		<dl>
+			<dt>PartNo</dt>
+			<dd><input name="part_no" id="part_no" value="${request.GET.get('part_no')}"/></dd>
+
+			<dt>Quantity</dt>
+			<dd><input name="quantity"  value="${request.GET.get('quantity')}"/></dd>
+
+			<dt>Description</dt>
+			<dd><input name="description"  value="${request.GET.get('description')}"/></dd>
+
+			<dt>Vendor lot</dt>
+			<dd><input name="vendor_lot"  value="${request.GET.get('vendor_lot')}"/></dd>
+
+			<dt>Date</dt>
+			<dd><input name="date" value="${request.GET.get('date')}"/></dd>
+
+			<dt>PO Number</dt>
+			<dd><input name="po_number"  value="${request.GET.get('po_number')}"/></dd>	
+
+			<dt>Vendor number (RYD3)</dt>
+			<dd><input name="vendor_number" value="${request.GET.get('vendor_number')}"/></dd>
+
+			<dt>Serial</dt>
+			<dd><input name="serial"  value="${request.GET.get('serial')}"/></dd>
+
+			<dt></dt>
+			<dd><input class="buttons" type="button" onClick="document.getElementById('flag').reset();" value="Rensa"/><input class="buttons" type="submit" value="Skapa"/></dd>
+
+		</dl>
+		</form>
+	</div>
+	<div id="footer">
+		<div id="colophone">
+			&copy; 2013 <div><a href="http://www.swedwise.se" target="_blank"><img src="/static/logo.png" height="18"/></a></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
