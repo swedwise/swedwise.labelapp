@@ -16,6 +16,7 @@ requires = [
     'reportlab',
     'chaussette',
     'circus',
+    'circus-web',
     ]
 
 setup(name='swedwise.labelapp',
