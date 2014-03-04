@@ -1,4 +1,5 @@
 out/*.dsi
+*.pid
 *.egg-info
 *.mo
 *.pyc

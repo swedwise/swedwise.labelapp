@@ -14,6 +14,8 @@ requires = [
     'pyramid_debugtoolbar',
     'waitress',
     'reportlab',
+    'chaussette',
+    'circus',
     ]
 
 setup(name='swedwise.labelapp',
