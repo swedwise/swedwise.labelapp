@@ -1,4 +1,5 @@
 out/*.dsi
+data/container_file*
 *.pid
 *.egg-info
 *.mo
