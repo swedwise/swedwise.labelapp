@@ -19,7 +19,7 @@ e g.
 	TEMP_FILE_PATH = ./out/
 
 If you want to keep a copy of the created label in the ``TEMP_FILE_PATH``,
-set ``REMOVE_LABEL_FILES`` to False, it is set to ``True`` by default
+set ``REMOVE_LABEL_FILES`` to ``False``, it is set to ``True`` by default
 
 AUTO_PRINT enables the print dialog to automatically open when the PDF is loaded
 
